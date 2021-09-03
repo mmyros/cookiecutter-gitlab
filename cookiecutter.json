@@ -1,10 +1,9 @@
 {
 	"repo_name": "pythonproject",
-	"full_name": "Hans Dampf",
-	"email": "hans.dampf@phys.ethz.ch",
-	"credits": "ETH Zurich, Institute for Particle Physics and Astrophysics",
+	"full_name": "Max Myroshnychenko",
+	"email": "mmyros@gmail.com",
 	"project_name": "{{ cookiecutter.repo_name }}",
-	"project_short_description": "this is fundamental science",
+	"project_short_description": "",
 	"release_date": "{% now 'utc', '%Y-%m-%d' %}",
 	"year": "{% now 'utc', '%Y' %}",
 	"version": "0.1.0"
