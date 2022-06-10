@@ -23,7 +23,6 @@ tests:
         - tox -r -vv
 	- coverage report -m
     coverage: '/TOTAL.+ ([0-9]{1,3}%)/'
-	
     stage: test_code
     artifacts:
            paths:
