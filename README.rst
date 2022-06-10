@@ -14,8 +14,7 @@ Usage
 
 Generate a Python package project::
 
-    cookiecutter https://cosmo-gitlab.phys.ethz.ch/cosmo/cookiecutter-pypackage
-
+    cookiecutter https://github.com/mmyros/cookiecutter-gitlab.git
 Then:
 
 * Create a repo and put it there.
