@@ -1,20 +1,29 @@
+image: python:3.8-buster
+
+
+before_script:
+  - export GOTO_NUM_THREADS=1
+  - pip install scipy cython numpy pandas
+  - pip install -r requirements.txt
+  - pip install -r requirements_dev.txt
+  - pip install -e .
+
 stages:
     - style
     - test_code
+    - test_cli    
     - test_and_create_docs
     - publish_docs
 
 style:
     script:
-        - pyenv local $(latest_python 3.7)
+        - flake8 .
     allow_failure: true
     stage: style
 
 
 tests:
     script:
-        - pyenv versions
-        - pyenv local $(latest_python 2.7) $(latest_python 3.7)
         - tox -r -vv
         - coverage report -m
     coverage: '/TOTAL.+ ([0-9]{1,3}%)/'
@@ -23,9 +32,14 @@ tests:
            paths:
              - htmlcov/
 
+
+test_cli:
+    script:
+        - {{ cookiecutter.repo_name }}
+    stage: test_cli
+
 docs:
     script:
-        - pyenv local $(latest_python 3.7)
         - tox -e docs
     stage: test_and_create_docs
     dependencies:
