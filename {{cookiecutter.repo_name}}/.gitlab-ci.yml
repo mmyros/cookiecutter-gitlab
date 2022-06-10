@@ -5,8 +5,6 @@ stages:
     - publish_docs
 
 style:
-    tags:
-        - python
     script:
         - pyenv local $(latest_python 3.7)
     allow_failure: true
@@ -14,8 +12,6 @@ style:
 
 
 tests:
-    tags:
-        - python
     script:
         - pyenv versions
         - pyenv local $(latest_python 2.7) $(latest_python 3.7)
@@ -28,8 +24,6 @@ tests:
              - htmlcov/
 
 docs:
-    tags:
-        - python
     script:
         - pyenv local $(latest_python 3.7)
         - tox -e docs
@@ -41,8 +35,6 @@ docs:
              - docs/_build
 
 publish_docs:
-    tags:
-        - python
     script:
         - publish_docs docs/_build/html {{ cookiecutter.repo_name }}
         - create_index_html
