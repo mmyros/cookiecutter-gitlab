@@ -6,5 +6,6 @@
 	"project_short_description": "",
 	"release_date": "{% now 'utc', '%Y-%m-%d' %}",
 	"year": "{% now 'utc', '%Y' %}",
-	"version": "0.1.0"
+	"version": "0.1.0",
+	"credits": ""
 }
