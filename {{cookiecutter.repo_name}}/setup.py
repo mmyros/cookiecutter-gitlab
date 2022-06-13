@@ -32,6 +32,11 @@ setup(
     name="{{ cookiecutter.repo_name }}",
     version="{{ cookiecutter.version }}",
     description="{{ cookiecutter.project_short_description }}",
+    entry_points={
+        'console_scripts': [
+            'cookiecutter.repo_name=cookiecutter.repo_name.cli:main',
+        ],
+    },    
     long_description=readme + "\n\n" + doclink + "\n\n" + history,
     author="{{ cookiecutter.full_name }}",
     author_email="{{ cookiecutter.email }}",
