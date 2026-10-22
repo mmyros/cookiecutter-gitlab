@@ -5,7 +5,7 @@ pytest
 pytest-cov
 pytest-regtest
 flake8
-sphinx
+sphinx==9.2.0
 coverage
 sphinx-pynpoint-theme
 tox
