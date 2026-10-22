@@ -2,7 +2,7 @@
 setuptools>=34.0.0
 pip>=9.0.0
 pytest
-pytest-cov
+pytest-cov==7.1.0
 pytest-regtest
 flake8
 sphinx
