@@ -10,5 +10,5 @@ coverage
 sphinx-pynpoint-theme
 tox
 black; python_version >= "3"
-six
+six==1.17.0
 twine
