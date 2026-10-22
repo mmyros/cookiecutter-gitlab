@@ -4,7 +4,7 @@ pip>=9.0.0
 pytest
 pytest-cov
 pytest-regtest
-flake8
+flake8==7.4.1
 sphinx
 coverage
 sphinx-pynpoint-theme
