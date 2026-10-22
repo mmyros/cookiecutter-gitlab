@@ -6,7 +6,7 @@ pytest-cov
 pytest-regtest
 flake8
 sphinx
-coverage
+coverage==7.16.2
 sphinx-pynpoint-theme
 tox
 black; python_version >= "3"
