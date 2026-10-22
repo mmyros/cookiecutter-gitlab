@@ -9,6 +9,6 @@ sphinx
 coverage
 sphinx-pynpoint-theme
 tox
-black; python_version >= "3"
+black==26.10.1; python_version >= "3"
 six
 twine
