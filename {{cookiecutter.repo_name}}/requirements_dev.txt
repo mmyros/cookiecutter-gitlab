@@ -11,4 +11,4 @@ sphinx-pynpoint-theme
 tox
 black; python_version >= "3"
 six
-twine
+twine==7.0.0
