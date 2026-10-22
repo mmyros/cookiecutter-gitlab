@@ -8,7 +8,7 @@ flake8
 sphinx
 coverage
 sphinx-pynpoint-theme
-tox
+tox==4.67.1
 black; python_version >= "3"
 six
 twine
