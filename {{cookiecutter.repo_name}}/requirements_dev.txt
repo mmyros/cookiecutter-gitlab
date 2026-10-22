@@ -7,7 +7,7 @@ pytest-regtest
 flake8
 sphinx
 coverage
-sphinx-pynpoint-theme
+sphinx-pynpoint-theme==0.2.1
 tox
 black; python_version >= "3"
 six
